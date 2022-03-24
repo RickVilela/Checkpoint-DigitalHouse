@@ -70,28 +70,42 @@ body{
 
 /* Fim do Banner */
 
+/* Inicio Caixa Historia de Limeira */
+
 #container-historia{
     display: flex;
     width: 80vw;
     height: 30vh;
-    background-color: #7ed6df;
     border-radius: 10px;
     justify-content: center;
     align-items: center;
     padding: 30px;
     margin: 0 auto;
     padding-top: 20px;
-    background-image: url(../img/historia-limeira.jpg);
-    background-repeat: no-repeat;
-    background-size: cover; 
+    color: black;
+    font-weight: 500;
 }
 
 .historia-limeira-texto{
-    position: relative;
-    color: black;
-    
+    font-weight: 900;
 }
 
+.historia-limeira-texto h2{
+    text-align: center;
+    padding:30px;
+}
+
+.imagem-fundo{
+    position: absolute;
+    width: 80vw;
+    height: 40vh;
+    border-radius: 10px;
+    margin-left: 9%;
+    opacity: 0.3;
+    padding-bottom: 30px;
+}
+
+/* Fim da Caixa de História */
 
 /* Início Cards */
 
@@ -205,18 +219,9 @@ a{
     height: 40px;
 }
 
-/* Design responsivo */
+/* Design responsivo - Movel G */
 
-
-
-
-
-@media (max-width:900px) {
-
-
-    #card-imagem{
-        display: absolute;
-    }
+@media (max-width:425px) {
 
     #card-imagem img{
         flex-direction: column;
@@ -256,10 +261,68 @@ a{
         height: 90%;
     }
 
+    #container-historia{
+        width: 110vw;
+        height: 90vh;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
+    
+    .historia-limeira-texto{
+        font-weight: 900;
+        padding-right: 10px;
+    }
+    
+    .historia-limeira-texto h2{
+        text-align: center;
+    }
+    
+    .imagem-fundo{ 
+        
+        width: 110vw;
+        height: 105vh;
+        opacity: 0.2;
+        margin: 0 auto;
+    }
+
+    }
+
+    /* Design Responsivo Tela grande 1280px*/
 
     @media (min-width: 1280px){
         .video{
             width: 100%;
+        }
+        #container-historia{
+            display: absolute;
+            width: 80vw;
+            height: 60vh;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            margin: 0 auto;
+            padding-top: 20px;
+            color: black;
+            font-weight: 500;
+            padding-left: 10vw;
+        }
+        
+        .historia-limeira-texto{
+            font-weight: 900;
+        }
+        
+        .historia-limeira-texto h2{
+            text-align: center;
+            padding:30px;
+        } 
+        .imagem-fundo{ 
+            width: 80vw;
+            height: 70vh;
+            border-radius: 10px;
+            opacity: 0.3;
+            padding-bottom: 30px;
+            padding-left: 10vw;
         }
     }
