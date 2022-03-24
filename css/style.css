@@ -1,0 +1,265 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+    
+}
+
+body{
+    background-color: #ecf0f1;
+}
+
+/* Cabeçalho */
+
+.container-cabecalho{
+    display: flex;
+    background-color:#7ed6df;
+    height: 70px;
+    width: 100%;
+    padding-left: 20px;
+    align-items: space-between;
+    justify-content: space-between;
+    font-family: "Hubballi";
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+}
+
+#menu ul{
+    display: flex;
+    list-style: none;
+}
+
+#menu li {
+    display: inline;
+    padding-right: 30px;
+
+}
+
+#menu ul li a{
+    padding: 2px ;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Fim do Cabeçalho */
+
+/* Início Banner */
+
+#banner{
+    background-image: url(../img/imagem-cidade.webp);
+    height: 300px;
+    width: 100%;
+    background-size:cover;
+    background-position: center;
+    opacity: 0.8 ;
+}
+
+#banner h2{
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    font-size: 100px;
+    font-family: 'Smooch Sans', sans-serif;
+}
+
+/* Fim do Banner */
+
+#container-historia{
+    display: flex;
+    width: 80vw;
+    height: 30vh;
+    background-color: #7ed6df;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    margin: 0 auto;
+    padding-top: 20px;
+    background-image: url(../img/historia-limeira.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.historia-limeira-texto{
+    position: relative;
+    color: black;
+    
+}
+
+
+/* Início Cards */
+
+#titulo-curiosidades{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.grupo-card{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-radius: 20px;
+}
+
+#card-imagem img{
+    display: flex;
+    width: 300px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    border: 20px;
+}
+
+.card-desc p{
+    display: flex;
+    padding-top: 10px;
+    padding-right: 70px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    flex-wrap: wrap;
+}
+#container-botao{
+    
+    padding-left: 100px;
+    padding-top: 30px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#botao {
+    background-color: #60a3bc;
+    color: #0c2461;
+    padding: 10px 20px;
+    border: 2px solid transparent;
+    font-weight: bold;
+    transition: .5s; 
+    border-radius: 5px;
+    
+}
+
+#botao:hover{
+    background-color: #82ccdd;
+    color: #0c2461;
+    transition: .5s; 
+    
+}
+
+
+/* Fim dos Cards */
+
+/* Início do Vídeo */
+
+
+.video{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 90px;
+}
+
+/* Fim do Vídeo */
+
+.voltar-inicio{
+    text-align: center;
+    padding-bottom: 30px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+/* Início Rodapé */
+
+.rodape{
+    padding: 10px;
+    display: flex;
+    height: 100px;
+    background-color: #60a3bc;
+    justify-content: center;    
+    align-items: center ;
+    gap: 25px;
+}
+
+#logos img{
+    height: 40px;
+}
+
+/* Design responsivo */
+
+
+
+
+
+@media (max-width:900px) {
+
+
+    #card-imagem{
+        display: absolute;
+    }
+
+    #card-imagem img{
+        flex-direction: column;
+    }
+
+   .card-desc{
+       position: relative;
+       padding-left: 30px;
+   }
+
+    .grupo-card{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 60px;
+    }
+
+    #container-botao{
+        position: relative;
+        padding-bottom: 25px;
+    }
+    
+
+    div .video{
+        position: absolute;
+        background-color: #60a3bc;
+        margin: 0px -20px 30px -20px;
+        padding: 20px;
+        padding-bottom: 55%;
+    }
+
+    .video{
+        position: relative;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+    }
+
+    }
+
+    @media (min-width: 1280px){
+        .video{
+            width: 100%;
+        }
+    }
