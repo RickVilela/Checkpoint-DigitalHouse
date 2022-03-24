@@ -262,8 +262,8 @@ a{
     }
 
     #container-historia{
-        width: 110vw;
-        height: 90vh;
+        width: 100vw;
+        height: 100vh;
         justify-content: center;
         align-items: center;
         margin: 0 auto;
@@ -280,12 +280,11 @@ a{
     
     .imagem-fundo{ 
         
-        width: 110vw;
-        height: 105vh;
+        width: 100vw;
+        height: 110vh;
         opacity: 0.2;
         margin: 0 auto;
     }
-
     }
 
     /* Design Responsivo Tela grande 1280px*/
